@@ -1,0 +1,830 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cute+Font&display=swap');
+
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Rubik', sans-serif;
+}
+
+
+
+@media (max-width : 500px) {
+  .offcanvas {
+      width: 100%;
+      height: 150px;
+    visibility      : visible;
+    position        : relative;
+    background      : orange;
+    border          : none;
+    justify-content : end;
+    color           : orange;
+  }
+
+  .offcanvas-start-lg {
+    top          : 0;
+    left         : 0;
+    border-right : 1px solid rgba(0, 0, 0, .2);
+    transform    : translateX(-120%);
+    transition: 0.2s;
+  }
+
+
+.navbar-nav
+{
+  margin-top: -0.5rem;
+}
+
+
+.navbar-nav li a {
+color: white !important;
+font-size: 1em;
+margin-top: -1rem;
+}
+
+
+nav .pic 
+{
+  display: flex;
+  justify-content: center;
+}
+
+
+nav .pic img
+{
+  position: absolute;
+  width: 40%;
+}
+
+
+.home
+{
+    width: 100%;
+    height: 750px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+}
+
+
+.home h1 
+{
+  position: absolute;
+  font-size: 1.5em;
+  color: rgba(255, 0, 0, .8);
+  padding: 20px;
+}
+
+
+.home h1 span
+{
+    color: #444;
+}
+
+
+
+.home img 
+{
+  position: absolute;
+  width: 50%;
+  margin-top: 8rem;
+}
+
+
+.home .box1
+{
+  position: absolute;
+  width: 85%;
+  height: 35px;
+  background: #fff;
+  box-shadow: 7px 7px 15px rgba(0, 0, 0, 0.2);
+  margin-top: 20rem;
+  border-radius: 10px;
+}
+
+
+.home .box1 p 
+{
+  position: absolute;
+  font-size: 1em;
+  padding: 5px;
+  margin-left: 20px;
+  color: #45c251;
+}
+
+
+
+.home .box2
+{
+  position: absolute;
+  width: 85%;
+  height: 35px;
+  background: #fff;
+  box-shadow: 7px 7px 15px rgba(0, 0, 0, 0.2);
+  margin-top: 23rem;
+  border-radius: 10px;
+}
+
+
+.home .box2 p 
+{
+  position: absolute;
+  font-size: 1em;
+  padding: 5px;
+  margin-left: 20px;
+  color: #df439a  ;
+}
+
+
+
+.home .box3
+{
+  position: absolute;
+  width: 85%;
+  height: 35px;
+  background: #fff;
+  box-shadow: 7px 7px 15px rgba(0, 0, 0, 0.2);
+  margin-top: 26rem;
+  border-radius: 10px;
+}
+
+
+.home .box3 p 
+{
+  position: absolute;
+  font-size: 1em;
+  padding: 5px;
+  margin-left: 20px;
+  color: #5563fc;
+}
+
+
+
+.home .box4
+{
+  position: absolute;
+  width: 85%;
+  height: 35px;
+  background: #fff;
+  box-shadow: 7px 7px 15px rgba(0, 0, 0, 0.2);
+  margin-top: 29rem;
+  border-radius: 10px;
+}
+
+
+.home .box4 p 
+{
+  position: absolute;
+  font-size: 1em;
+  padding: 5px;
+  margin-left: 20px;
+  color: #fe9502;
+}
+
+
+
+.home h2 
+{
+  position: absolute;
+  font-size: 0.8em;
+  color: #444;
+  margin-top: 35rem;
+  padding: 12px;
+  border-left: 2px solid #444;
+  border-right: 2px solid #444;
+}
+
+
+.home a 
+{
+  position: absolute;
+  padding: 13px 70px;
+  background: #f46b45;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #eea849, #f46b45);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #eea849, #f46b45); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+color: #fff;
+font-size: 1.2em;
+border-radius: 15px;
+text-decoration: none;
+margin-top: 42rem;
+transition: 0.3s;
+}
+
+
+.home a:hover 
+{
+  background: rgba(0,0,0,0.08);
+  box-shadow: 0px 0px 3px 3px rgba(0,0,0,0.08);
+  transition: 0.3s;
+}
+
+
+
+footer 
+{
+  width: 100%;
+  height: 200px;
+  background: rgba(255,0,0,0.8);
+}
+
+
+footer .info 
+{
+  padding: 30px 20px;
+}
+
+
+footer .info a 
+{
+  position: absolute;
+  font-size: 0.8em;
+  color: #fff;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+
+footer .info a:hover 
+{
+  color: #444;
+  border-bottom: 2px solid #444;
+  transition: 0.2s;
+}
+
+
+footer .adds
+{
+  display: flex;
+  justify-content: center;
+}
+
+
+footer .adds h3
+{
+  position: absolute;
+  font-size: 0.8em;
+  color: #000;
+  margin-top: 1rem;
+}
+
+
+
+
+
+
+/******About********/
+
+
+.about 
+{
+    width: 100%;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    background: rgb(225,221,217);
+background: linear-gradient(0deg, rgba(225,221,217,1) 0%, rgba(255,235,224,1) 100%);
+}
+
+
+
+.about img 
+{
+    position: absolute;
+    width: 60%;
+}
+
+
+.about h3
+{
+    position: absolute;
+    font-size: 1.7em;
+    color: #444;
+    margin-top: 13.5rem;
+}
+
+
+
+.about .order 
+{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+.about .order img 
+{
+    position: absolute;
+    width: 65%;
+    margin-top: 14.5rem;
+}
+
+
+
+.about h4
+{
+    position: absolute;
+    font-size: 1.7em;
+    color: #5ad535;
+    margin-top: 28.5rem;
+}
+
+
+
+.about a 
+{
+  position: absolute;
+  padding: 13px 90px;
+  background: #fff;
+color: #444;
+font-size: 1.2em;
+border-radius: 15px;
+text-decoration: none;
+margin-top: 36rem;
+transition: 0.3s;
+}
+
+
+
+
+
+/*******More*******/
+
+
+.more 
+{
+    width: 100%;
+    height: 800px;
+}
+
+
+
+
+.more .carousel {
+    position: relative;
+    margin-top: 26px;
+    background: #FF8008;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #FFC837, #FF8008);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #FFC837, #FF8008); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.more .carousel-inner {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.more .carousel-open:checked + .carousel-item {
+    position: static;
+    opacity: 100;
+}
+
+.more .carousel-item {
+    position: absolute;
+    opacity: 0;
+    width: 100%;
+    height: 170px;
+    display: flex;
+    justify-content: center;
+    -webkit-transition: opacity 0.6s ease-out;
+    transition: opacity 0.6s ease-out;
+}
+
+
+
+
+.more .carousel-item h2 {
+    position: absolute;
+    font-size: 2em;
+    color: #444;
+    margin-top: 3.7rem;
+}
+
+.more .carousel-control {
+    background: rgba(0, 0, 0, 0.28);
+    border-radius: 50%;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+    font-size: 40px;
+    height: 40px;
+    line-height: 35px;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+    cursor: pointer;
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    text-align: center;
+    width: 40px;
+    z-index: 10;
+}
+
+.more .carousel-control.prev {
+    left: 2%;
+}
+
+.more .carousel-control.next {
+    right: 2%;
+}
+
+.more .carousel-control:hover {
+    background: rgba(0, 0, 0, 0.8);
+    color: #aaaaaa;
+}
+
+#carousel-1:checked ~ .control-1,
+#carousel-2:checked ~ .control-2,
+#carousel-3:checked ~ .control-3 {
+    display: block;
+}
+
+
+
+.more .carousel-indicators {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 2%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 10;
+}
+
+.more .carousel-indicators li {
+    display: inline-block;
+    margin: 0 0px;
+}
+
+.more .carousel-bullet {
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    font-size: 35px;
+}
+
+.more .carousel-bullet:hover {
+    color: #aaaaaa;
+}
+
+
+
+#carousel-1:checked ~ .control-1 ~ .carousel-indicators li:nth-child(1) .carousel-bullet,
+#carousel-2:checked ~ .control-2 ~ .carousel-indicators li:nth-child(2) .carousel-bullet,
+#carousel-3:checked ~ .control-3 ~ .carousel-indicators li:nth-child(3) .carousel-bullet {
+    color: #428bca;
+}
+
+#title {
+    width: 100%;
+    position: absolute;
+    padding: 0px;
+    margin: 0px auto;
+    text-align: center;
+    font-size: 27px;
+    color: rgba(255, 255, 255, 1);
+    font-family: 'Open Sans', sans-serif;
+    z-index: 9999;
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.33), -1px 0px 2px rgba(255, 255, 255, 0);
+}
+
+
+
+.more h3
+{
+    position: absolute;
+    font-size: 0.7em;
+    color: #444;
+    margin-top: 2.5rem;
+    padding: 25px;
+}
+
+
+
+.more img 
+{
+    position: absolute;
+    width: 50%;
+    margin-left: 90px;
+    margin-top: 20rem;
+}
+
+
+.more .carde 
+{
+    display: flex;
+    justify-content: center;
+}
+
+
+.more a 
+{
+  position: absolute;
+  padding: 13px 90px;
+  background: #fff;
+color: #444;
+border: 1.5px solid  #444;
+font-size: 1.1em;
+border-radius: 15px;
+text-decoration: none;
+margin-top: 33rem;
+transition: 0.3s;
+}
+
+
+.more a:hover 
+{
+    border: none;
+    background: #444;
+    color: #fff;
+    transition: 0.3s;
+}
+
+
+
+
+
+
+
+/*********Card***********/
+
+
+.card 
+{
+    width: 100%;
+    height: 1000px;
+    display: flex;
+    justify-content: center;
+    background: #000428;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #004e92, #000428);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #004e92, #000428); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+
+.card h1 
+{
+  position: absolute;
+  font-size: 1.5em;
+  color: #e96443;  /* fallback for old browsers */
+color: -webkit-linear-gradient(to right, #904e95, #e96443);  /* Chrome 10-25, Safari 5.1-6 */
+color: linear-gradient(to right, #904e95, #e96443); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+margin-top: 2rem;
+animation: changeColor1 7s linear infinite alternate;
+}
+
+
+@keyframes changeColor1
+{
+
+  0%
+  {
+    color: #e96443;  /* fallback for old browsers */
+color: -webkit-linear-gradient(to right, #904e95, #e96443);  /* Chrome 10-25, Safari 5.1-6 */
+color: linear-gradient(to right, #904e95, #e96443); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
+  50%
+  {
+    color: #fff;
+  }
+  100% 
+  {
+    color: #e96443;  /* fallback for old browsers */
+color: -webkit-linear-gradient(to right, #904e95, #e96443);  /* Chrome 10-25, Safari 5.1-6 */
+color: linear-gradient(to right, #904e95, #e96443); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
+
+
+}
+
+
+
+.card img 
+{
+  position: absolute;
+  width: 20%;
+  margin-top: 5rem;
+  left: 1%;
+}
+
+
+.card p 
+{
+  position: absolute;
+  font-size: 0.8em;
+  color: #fff;
+  margin-top: 3.5rem;
+  padding: 30px;
+  margin-left: 75px;
+  animation: changeColor2 4s linear infinite alternate;
+}
+
+
+
+@keyframes changeColor2 {
+  
+  0%
+  {
+    color: #fff;
+  }
+  50% 
+  {
+    color: rgba(255, 255, 255, 0.1);
+  }
+  100% 
+  {
+    color: #fff;
+  }
+}
+
+
+.card .box1 
+{
+  position: absolute;
+  width: 62.5%;
+  height: 140px;
+  display: flex;
+  justify-content: center ;
+  background: #fff;
+  border-radius: 10px;
+  margin-top: 14rem;
+  transition: 0.2s;
+}
+
+
+.card .box1:hover 
+{
+  box-shadow: 0px 0px 3px 3px #fff;
+  transition: 0.2s;
+}
+
+
+
+.card .box1 img 
+{
+  position: absolute;
+  width: 30%;
+  left: 65%;
+}
+
+
+.card .box1 h2 
+{
+  position: absolute;
+  font-size: 1.5em;
+  color: #e7a11d;
+  left: 10%;
+  font-family: 'Cute Font', cursive;
+  margin-top: 4rem;
+}
+
+
+
+.card .box1 h3 
+{
+  position: absolute;
+  font-size: 1em;
+  left: 70%;
+  color: #c22;
+  margin-top: 0.2rem;
+}
+
+.card .box1 h4 
+{
+  position: absolute;
+  font-size: 0.9em;
+  left: 10%;
+  color: #64c43d  ;
+  margin-top: 2.7rem;
+}
+
+
+
+
+
+
+
+.card .box1 .basket img 
+{
+  position: absolute;
+  width: 8%;
+  left: 5%;
+  bottom: 81%;
+}
+
+
+
+.card .box1 h5 
+{
+  position: absolute;
+  font-size: 0.8em;
+  left: 5%;
+  margin-top: 7rem;
+}
+
+
+
+.card .lin 
+{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+}
+
+
+.card .lin a 
+{
+
+  color: #fff;
+  font-size: 1.5em;
+  margin-top: 25rem;
+}
+
+
+
+
+.card .wrapper {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  position: relative;
+  margin-top: 35rem;
+}
+
+.card .container {
+  width: 70%;
+  height: 12vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  left: 15%;
+  margin-top: 1rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 1em 0;
+  position: relative;
+  -webkit-box-shadow: 0 25px 40px rgba(1, 53, 21, 0.2);
+          box-shadow: 0 25px 40px rgba(1, 53, 21, 0.2);
+  font-size: 16px;
+  border-radius: 0.5em;
+  background-color: rgba(255,255,255,0.2);
+  border-bottom: 10px solid #e7a11d;
+}
+.card i {
+  color: #18f98f;
+  font-size: 2em;
+  text-align: center;
+}
+.card span.num {
+  color: #fff;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  font-weight: 600;
+  font-size: 1.7em;
+}
+.card span.text {
+  font-size: 1.3em;
+  text-align: center;
+  padding: 0.7em 0;
+  font-weight: 400;
+  color: #f6f6f6;
+  line-height: 0;
+}
+
+.card   .box6 {
+    width: 90vw;
+  }
+
+
+
+
+
+
+/*********Aboutus********/
+
+
+.aboutus 
+{
+    width: 100%;
+    height: 750px;
+    
+}
+
+
+
+
+
+
+
+}

@@ -1,0 +1,77 @@
+<!Doctype html>
+<html lang = 'en'>
+<head>
+  <meta charset = 'UTF-8'>
+  <meta name = 'viewport'
+        content = 'width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0'>
+  <title>Anyfind shopping </title>
+  <link rel = 'stylesheet' href = 'css/style.css'>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@700&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cute+Font&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="card">
+        <h1>Welcome to our card type!</h1>
+        <img src="icon.png">
+        <p>The online cards you will use in buying
+          something and some products.
+        </p>
+
+        <div class="box1">
+          <img src="visab.png">
+          <h2>4135 **** **** 4536</h2>
+          <h3>Anyfind</h3>  
+          <h4>Online shopping</h4>
+          <div class="basket">
+            <img src="basket.png">
+          </div>
+          <h5>Name: ....</h5>
+        </div>
+        <div class="lin">
+          <a href="#">About Card ></a>
+        </div>
+
+
+        <div class="box6">
+          <div class="wrapper">
+            <div class="container">
+              <i class="fas fa-utensils"></i>
+              <span class="num" id="value-1" data-val="50500">00</span>
+              <span class="text">Online shoppings</span>
+            </div>
+            <div class="container">
+              <i class="far fa-smile-beam"></i>
+              <span class="num" id="value-2" data-val="30040">00</span>
+              <span class="text">Happy Customers</span>
+            </div>
+            <div class="container">
+              <i class="fas fa-star"></i>
+              <span class="num" id="value-4" data-val="15880">00</span>
+              <span class="text">Five Stars</span>
+            </div>
+          </div>
+         
+        </div>
+        <script>
+          let valueDisplays = document.querySelectorAll(".num");
+          let interval = 0;
+    
+          valueDisplays.forEach((valueDisplay) => {
+            let startValue = 10000;
+            let endValue = parseInt(valueDisplay.getAttribute("data-val"));
+            let duration = Math.floor(interval / endValue);
+            let counter = setInterval(function () {
+              startValue += 20;
+              valueDisplay.textContent = startValue;
+              if (startValue == endValue) {
+                clearInterval(counter);
+              }
+            }, duration);
+          });
+        </script>
+    </section>

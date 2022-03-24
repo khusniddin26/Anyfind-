@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Responsive jQuery Shopping Basket</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="./shopping.css">
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Basket</title>
+</head>
+
+<body>
+  <main>
+    <section class="shopping">
+    <div class="basket">
+      <div class="basket-module">
+        <label for="promo-code">Enter a promotional code</label>
+        <input id="promo-code" type="text" name="promo-code" maxlength="5" class="promo-code-field">
+        <button class="promo-code-cta">Apply</button>
+      </div>
+      <div class="basket-labels">
+        <ul>
+          <li class="item item-heading">Item</li>
+          <li class="price">Price</li>
+          <li class="quantity">Quantity</li>
+          <li class="subtotal">Subtotal</li>
+        </ul>
+      </div>
+      <div class="basket-product">
+        <div class="item">
+          <div class="product-image">
+            <img src="macbook.jpg" alt="Placholder Image 2" class="product-frame">
+          </div>
+          <div class="product-details">
+            <h1><strong><span class="item-quantity"></span></strong></h1>
+            <p><strong>MackBook Pro 16<br>(2021)</strong></p>
+            <p>Product Code - 232321939</p>
+          </div>
+        </div>
+        <div class="price">1600.00</div>
+        <div class="quantity">
+          <input type="number" value="0" min="1" class="quantity-field">
+        </div>
+        <div class="subtotal">0.00</div>
+        <div class="remove">
+          <button>Remove</button>
+        </div>
+      </div>
+      <div class="basket-product">
+        <div class="item">
+          <div class="product-image">
+            <img src="lenovo.jpg" alt="Placholder Image 2" class="product-frame">
+          </div>
+          <div class="product-details">
+            <h1><strong><span class="item-quantity"></span></strong></h1>
+            <p><strong>Lenovo laptop <br> intel-Core i-3 (2021)</strong></p>
+            <p>Product Code - 232321939</p>
+          </div>
+        </div>
+        <div class="price">560.00</div>
+        <div class="quantity">
+          <input type="number" value="0" min="1" class="quantity-field">
+        </div>
+        <div class="subtotal">0.00</div>
+        <div class="remove">
+          <button>Remove</button>
+        </div>
+      </div>
+      <div class="basket-product">
+        <div class="item">
+          <div class="product-image">
+            <img src="hp.png" alt="Placholder Image 2" class="product-frame">
+          </div>
+          <div class="product-details">
+            <h1><strong><span class="item-quantity"></span></strong></h1>
+            <p><strong>hp laptop <br> intel-Core i-4 (2021)</strong></p>
+            <p>Product Code - 232321939</p>
+          </div>
+        </div>
+        <div class="price">600.00</div>
+        <div class="quantity">
+          <input type="number" value="0" min="1" class="quantity-field">
+        </div>
+        <div class="subtotal">0.00</div>
+        <div class="remove">
+          <button>Remove</button>
+        </div>
+      </div>
+      <div class="basket-product">
+        <div class="item">
+          <div class="product-image">
+            <img src="acer.jpg" alt="Placholder Image 2" class="product-frame">
+          </div>
+          <div class="product-details">
+            <h1><strong><span class="item-quantity"></span></strong></h1>
+            <p><strong>Acer laptop <br> intel-Core i-5 (2021)</strong></p>
+            <p>Product Code - 232321939</p>
+          </div>
+        </div>
+        <div class="price">699.00</div>
+        <div class="quantity">
+          <input type="number" value="0" min="1" class="quantity-field">
+        </div>
+        <div class="subtotal">0.00</div>
+        <div class="remove">
+          <button>Remove</button>
+        </div>
+      </div>
+      <div class="basket-product">
+        <div class="item">
+          <div class="product-image">
+            <img src="asus.png" alt="Placholder Image 2" class="product-frame">
+          </div>
+          <div class="product-details">
+            <h1><strong><span class="item-quantity"></span></strong></h1>
+            <p><strong>Asus laptop <br> intel-Core i-3 (2021)</strong></p>
+            <p>Product Code - 232321939</p>
+          </div>
+        </div>
+        <div class="price">700.00</div>
+        <div class="quantity">
+          <input type="number" value="0" min="1" class="quantity-field">
+        </div>
+        <div class="subtotal">0.00</div>
+        <div class="remove">
+          <button>Remove</button>
+        </div>
+      </div>
+      <div class="basket-product">
+        <div class="item">
+          <div class="product-image">
+            <img src="dell.png" alt="Placholder Image 2" class="product-frame">
+          </div>
+          <div class="product-details">
+            <h1><strong><span class="item-quantity"></span></strong></h1>
+            <p><strong>Dell laptop <br> intel-Core i-7 (2021)</strong></p>
+            <p>Product Code - 232321939</p>
+          </div>
+        </div>
+        <div class="price">1000.00</div>
+        <div class="quantity">
+          <input type="number" value="0" min="1" class="quantity-field">
+        </div>
+        <div class="subtotal">0.00</div>
+        <div class="remove">
+          <button>Remove</button>
+        </div>
+      </div>
+      <div class="basket-product">
+        <div class="item">
+          <div class="product-image">
+            <img src="galaxy.jpg" alt="Placholder Image 2" class="product-frame">
+          </div>
+          <div class="product-details">
+            <h1><strong><span class="item-quantity"></span></strong></h1>
+            <p><strong>Samsung Galaxy <br> S Book (2021)</strong></p>
+            <p>Product Code - 232321939</p>
+          </div>
+        </div>
+        <div class="price">1099.00</div>
+        <div class="quantity">
+          <input type="number" value="0" min="1" class="quantity-field">
+        </div>
+        <div class="subtotal">0.00</div>
+        <div class="remove">
+          <button>Remove</button>
+        </div>
+      </div>
+      <div class="basket-product">
+        <div class="item">
+          <div class="product-image">
+            <img src="xiaomi.png" alt="Placholder Image 2" class="product-frame">
+          </div>
+          <div class="product-details">
+            <h1><strong><span class="item-quantity"></span></strong></h1>
+            <p><strong>Xiaomi laptop <br> Mi Book (2021)</strong></p>
+            <p>Product Code - 232321939</p>
+          </div>
+        </div>
+        <div class="price">890.00</div>
+        <div class="quantity">
+          <input type="number" value="0" min="1" class="quantity-field">
+        </div>
+        <div class="subtotal">0.00</div>
+        <div class="remove">
+          <button>Remove</button>
+        </div>
+      </div>
+      <div class="basket-product">
+        <div class="item">
+          <div class="product-image">
+            <img src="legion.png" alt="Placholder Image 2" class="product-frame">
+          </div>
+          <div class="product-details">
+            <h1><strong><span class="item-quantity"></span></strong></h1>
+            <p><strong>legion laptop <br> intel-Core i-6 (2021) </strong></p>
+            <p>Product Code - 232321939</p>
+          </div>
+        </div>
+        <div class="price">1050.00</div>
+        <div class="quantity">
+          <input type="number" value="0" min="1" class="quantity-field">
+        </div>
+        <div class="subtotal">0.00</div>
+        <div class="remove">
+          <button>Remove</button>
+        </div>
+      </div>
+      <div class="basket-product">
+        <div class="item">
+          <div class="product-image">
+            <img src="lg.jpg" alt="Placholder Image 2" class="product-frame">
+          </div>
+          <div class="product-details">
+            <h1><strong><span class="item-quantity"></span></strong></h1>
+            <p><strong>LG laptop <br> intel-Core i-3 (2021)</strong></p>
+            <p>Product Code - 232321939</p>
+          </div>
+        </div>
+        <div class="price">400.00</div>
+        <div class="quantity">
+          <input type="number" value="0" min="1" class="quantity-field">
+        </div>
+        <div class="subtotal">0.00</div>
+        <div class="remove">
+          <button>Remove</button>
+        </div>
+      </div>
+      <div class="basket-product">
+        <div class="item">
+          <div class="product-image">
+            <img src="toshiba.png" alt="Placholder Image 2" class="product-frame">
+          </div>
+          <div class="product-details">
+            <h1><strong><span class="item-quantity"></span></strong></h1>
+            <p><strong>Toshiba laptop  <br> intel-Core i-5 (2021) </strong></p>
+            <p>Product Code - 232321939</p>
+          </div>
+        </div>
+        <div class="price">560.00</div>
+        <div class="quantity">
+          <input type="number" value="0" min="1" class="quantity-field">
+        </div>
+        <div class="subtotal">0.00</div>
+        <div class="remove">
+          <button>Remove</button>
+        </div>
+      </div>
+    </div>
+    <aside>
+      <div class="summary">
+        <div class="summary-total-items"><span class="total-items"></span> Items in your Bag</div>
+        <div class="summary-subtotal">
+          <div class="subtotal-title">Subtotal</div>
+          <div class="subtotal-value final-value" id="basket-subtotal">130.00</div>
+          <div class="summary-promo hide">
+            <div class="promo-title">Promotion</div>
+            <div class="promo-value final-value" id="basket-promo"></div>
+          </div>
+        </div>
+        <div class="summary-delivery">
+          <select name="delivery-collection" class="summary-delivery-selection">
+              <option value="0" selected="selected">Select Collection or Delivery</option>
+             <option value="collection">Collection</option>
+             <option value="first-class">Royal Mail 1st Class</option>
+             <option value="second-class">Royal Mail 2nd Class</option>
+             <option value="signed-for">Royal Mail Special Delivery</option>
+          </select>
+        </div>
+        <div class="summary-total">
+          <div class="total-title">Total</div>
+          <div class="total-value final-value" id="basket-total">130.00</div>
+        </div>
+        <div class="summary-checkout">
+          <button class="checkout-cta">Go to Secure Checkout</button>
+        </div>
+      </div>
+    </aside>
+    </section>
+  </main>
+</body>
+
+</html>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script><script  src="shopping.js"></script>
+
+</body>
+</html>
